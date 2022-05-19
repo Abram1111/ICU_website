@@ -1,2 +1,2 @@
 # ICU_website
-a small HIS for ICU department
+A Small HIS For ICU Department
