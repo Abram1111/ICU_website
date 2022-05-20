@@ -1,0 +1,34 @@
+.topnav {
+    overflow: hidden;
+    background-color: rgb(9 38 68 / 79%);
+    left: 0%;
+    top: 0%;
+    margin-right: 10px;
+    display: flex;
+    position: absolute;
+    border-radius: 1rem;
+    width: 100%;
+    height: 10%;
+}
+
+/* Style the topnav links */
+.topnav a {
+
+    display: block;
+    color: #fdfcfc;
+    padding: 14px 16px;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 25px;
+    text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+    background-color: rgb(9, 38, 68);
+    color: burlywood;
+}
+
+.container {
+    width: 60%;
+    margin-top: 10%;
+}

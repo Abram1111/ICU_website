@@ -139,7 +139,7 @@ body {
 /* Style the top navigation bar */
 .topnav {
     overflow: hidden;
-    background-color: rgb(9, 38, 68);
+    background-color: rgb(9 38 68 / 79%);
     left: 0%;
     top: 0%;
     margin-right: 10px;

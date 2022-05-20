@@ -1,173 +1,85 @@
-<!DOCTYPE html>
+<!doctype html>
+<html lang="en">
 
 <head>
-  <link rel="stylesheet" href="styles.css">
-  <style>
-    * {
-      box-sizing: border-box;
-    }
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    input[type=text],
-    select {
-      width: 100%;
-      padding: 12px;
-      border: 1px solid rgb(220, 227, 228);
-      border-radius: 4px;
-      resize: vertical;
-      color: black;
-      font-size: 20px;
-      font-family: 'Times New Roman', Times, serif;
-    }
-
-    input[type=password],
-    select {
-      width: 100%;
-      padding: 12px;
-      border: 1px solid rgb(220, 227, 228);
-      border-radius: 4px;
-      resize: vertical;
-      background-color: rgb(220, 227, 228);
-      ;
-      color: rgb(9, 38, 68);
-    }
-
-    label {
-      padding: 12px 12px 12px 0;
-      display: inline-block;
-      color: rgb(220, 227, 228);
-      font-size: 30px;
-      font-family: 'Times New Roman', Times, serif;
-    }
-
-    input[type=submit] {
-      background-color: rgb(220, 227, 228);
-      color: rgb(9, 38, 68);
-      padding: 12px 20px;
-      border: none;
-      border-radius: 4px;
-      cursor: pointer;
-      float: right;
-    }
-
-    input[type=submit]:hover {
-      background-color: burlywood;
-    }
-
-    .container {
-      border-radius: 5px;
-      background-color: rgb(9, 38, 68);
-      padding: 20px;
-    }
-
-    .col-25 {
-      float: left;
-      width: 25%;
-      margin-top: 6px;
-    }
-
-    .col-75 {
-      float: left;
-      width: 75%;
-      margin-top: 6px;
-    }
-
-    /* Clear floats after the columns */
-    .row:after {
-      content: "";
-      display: table;
-      clear: both;
-
-    }
-
-    /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
-    @media screen and (max-width: 600px) {
-
-      .col-25,
-      .col-75,
-      input[type=submit] {
-        width: 100%;
-        margin-top: 0;
-      }
-    }
-  </style>
-
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="sign_up.css">
+  <title>signup</title>
 </head>
 
 <body>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
   <div class="topnav">
-
     <br>
     <img src="image/icu_icon.jpg" alt="" width="75" height="75">
-    <a href="index.html">Home</a>
-    <a href="about_us.html">About</a>
-    <a href="login.html">log in</a>
+    <a href="index.html">
+      <img src="image/clipart41237.png" alt="" width="50" height="50" style="    margin-bottom: auto;
+    margin-top: auto;
+    margin-left: 5px;"> Home
+    </a>
+    <a href="about_us.html"> <img src="image/about-us.png" alt="" width="50" height="50" style="    margin-bottom: auto;
+    margin-top: auto;
+    margin-left: 5px;"> About
+    </a>
+    <a href="login.html"> <img src="image/NicePng_login-button-png_8035041.png" alt="" width="50" height="50" style="    margin-bottom: auto;
+      margin-top: auto;
+      margin-left: 5px;"> log in</a>
 
   </div>
-
-  <!---- need to call action in this-->
-  <form action="/action_page.php">
-      <input type="radio" id="Medical Staff" name="position" value="Medical Staff">
-      <label for="Medical Staff">Medical Staff</label><br>
-      <input type="radio" id="Patient" name="position" value="patient">
-      <label for="Patient">Patient</label><br>
-     
-
-
-
-
-    <div class="container">
-      <form action="/action_page.php">
-        <div class="row">
-          <div class="col-25">
-            <label for="fname">First Name</label>
-          </div>
-          <div class="col-75">
-            <input type="text" id="fname" name="firstname" placeholder="Your name..">
-          </div>
+  <div class="container">
+    <form class="row g-3">
+      <div class="col-md-6">
+        <label for="inputEmail4" class="form-label">Email</label>
+        <input type="email" class="form-control" id="inputEmail4">
+      </div>
+      <div class="col-md-6">
+        <label for="inputPassword4" class="form-label">Password</label>
+        <input type="password" class="form-control" id="inputPassword4">
+      </div>
+      <div class="col-12">
+        <label for="inputAddress" class="form-label">Address</label>
+        <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+      </div>
+      <div class="col-12">
+        <label for="inputAddress2" class="form-label">Address 2</label>
+        <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+      </div>
+      <div class="col-md-6">
+        <label for="inputCity" class="form-label">City</label>
+        <input type="text" class="form-control" id="inputCity">
+      </div>
+      <div class="col-md-4">
+        <label for="inputState" class="form-label">State</label>
+        <select id="inputState" class="form-select">
+          <option selected>Choose...</option>
+          <option>...</option>
+        </select>
+      </div>
+      <div class="col-md-2">
+        <label for="inputZip" class="form-label">Zip</label>
+        <input type="text" class="form-control" id="inputZip">
+      </div>
+      <div class="col-12">
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="gridCheck">
+          <label class="form-check-label" for="gridCheck">
+            Check me out
+          </label>
         </div>
-        <div class="row">
-          <div class="col-25">
-            <label for="lname">Last Name</label>
-          </div>
-          <div class="col-75">
-            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-25">
-            <label for="address">Address</label>
-          </div>
-          <div class="col-75">
-            <input type="text" id="address" name="address" placeholder="Please enter Your Address..">
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-25">
-            <label for="poaition">Position</label>
-          </div>
-          <div class="col-75">
-            <select id="position" name="Position">
-              <option value="admin">Admin</option>
-              <option value="doctor">Doctor</option>
-              <option value="nurse">Nurse</option>
-              <option value="patient">Patient</option>
-            </select>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-25">
-            <label for="password">Password</label>
-          </div>
-          <div class="col-75">
-            <input type="password" id="password" name="Password" placeholder="Please enter your password..">
-          </div>
-        </div>
-
-        <br>
-        <div class="row">
-          <input type="submit" value="Submit">
-        </div>
-      </form>
-    </div>
-
+      </div>
+      <div class="col-12">
+        <button type="submit" class="btn btn-primary">Sign in</button>
+      </div>
+    </form>
+  </div>
 </body>
+
+</html>
