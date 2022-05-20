@@ -126,7 +126,7 @@ body {
   width: 100%;
   border-radius: 1rem;
   background-image: url(image/contact\ us\ 1.jpg);
-  background-repeat: repeat;
+  background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: 100%;
 }
