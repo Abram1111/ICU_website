@@ -1,302 +1,345 @@
 body {
-    background-color: rgb(220, 227, 228);
-    max-width: 500;
-    margin-top: 0px;
-    margin-right: 0px;
-    margin-bottom: 0px;
-    margin-left: 0px; 
-    background-image: url("mail.png");
-    background-image: url("phone-call.png");
-    background-image: url("message.png");
-    background-color: rgb(220, 227, 228);
-   
-  }
-  html{
-   
-    overflow-x: hidden;
-    scroll-behavior: smooth;
+  background-color: rgb(220, 227, 228);
+  max-width: 500;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  background-image: url("mail.png");
+  background-image: url("phone-call.png");
+  background-image: url("message.png");
+  background-color: rgb(220, 227, 228);
+
 }
-  h1 {
-    color: #47abcc;
-    padding-top: 105;
-    text-align: center;
-  }
-  /*
+
+html {
+
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+h1 {
+  color: #47abcc;
+  padding-top: 105;
+  text-align: center;
+}
+
+/*
   p {
     color: red;
   }*/
-  * {
-    box-sizing: border-box;
-  }
-  .micon{
-    margin-left: 90%;
-    margin-top: 0;
-    margin-bottom: 90%;
-    margin-right: 0;
-    width: 50px;
-   height: 50px;
-   padding-top: 0%;
-  }
-  body {
-    font-family: Arial, Helvetica, sans-serif;
-    width:100%;
-    height: 100vh;
-  }
-.viewdoctor{
+* {
+  box-sizing: border-box;
+}
+
+.micon {
+  margin-left: 90%;
+  margin-top: 0;
+  margin-bottom: 90%;
+  margin-right: 0;
+  width: 50px;
+  height: 50px;
+  padding-top: 0%;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  width: 100%;
+  height: 100vh;
+}
+
+.viewdoctor {
   top: 830px;
   right: 400px;
-  text-align:left;
+  text-align: left;
 }
-  
-  /* Style the header */
-  .header {
-    background-color: rgb(220, 227, 228);
-    padding: 50px;
-    text-align:justify;
-    font-size: 35px;
-    display: block;
-  }
 
-  .menu-icons{
-    display: flex;
-    align-items: center;
+/* Style the header */
+.header {
+  background-color: rgb(220, 227, 228);
+  padding: 50px;
+  text-align: justify;
+  font-size: 35px;
+  display: block;
 }
-.inner-menu-icons{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 0 1rem;
+
+.menu-icons {
+  display: flex;
+  align-items: center;
 }
-.inner-menu-content{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+
+.inner-menu-icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 1rem;
 }
-.inner-menu-icons i{
-    width: 50px;
-    height: 50px;
-    line-height: 50px;
-    text-align: center;
-    background: var(--btnclr);
-    color: rgb(29, 12, 12);
-    border-radius: 100px;
-    margin-right: 10px;
-    font-size: 2rem;
+
+.inner-menu-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-.inner-menu-icons i:hover{
-    transform: rotate(360deg);
-    background: var(--otherclr);
-    cursor: pointer;
+
+.inner-menu-icons i {
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  background: var(--btnclr);
+  color: rgb(29, 12, 12);
+  border-radius: 100px;
+  margin-right: 10px;
+  font-size: 2rem;
 }
-.inner-menu-content span{
-font-size: 1.5rem;
+
+.inner-menu-icons i:hover {
+  transform: rotate(360deg);
+  background: var(--otherclr);
+  cursor: pointer;
 }
-  /* Create three equal columns that floats next to each other */
+
+.inner-menu-content span {
+  font-size: 1.5rem;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+  height: 300px;
+  /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+.footer {
+  padding: 10%;
+  text-align: left;
+  width: 100%;
+  border-radius: 1rem;
+  background-image: url(image/contact\ us\ 1.jpg);
+  background-repeat: repeat;
+  background-attachment: fixed;
+  background-size: 100%;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
   .column {
-    float: left;
-    width: 33.33%;
-    padding: 10px;
-    height: 300px; /* Should be removed. Only for demonstration */
-  }
-  
-  /* Clear floats after the columns */
-  .row:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-  
-  /* Style the footer */
-  .footer{
-    background-color: rgb(9, 38, 68);
-    padding: 10%;
-    text-align: right;
     width: 100%;
   }
-  
-  /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
-  @media (max-width: 600px) {
-    .column {
-      width: 100%;
-    }
-  }
-  /* Style the top navigation bar */
+}
+
+/* Style the top navigation bar */
 .topnav {
-    overflow: hidden;
-    background-color:rgb(9, 38, 68);
-    left: 0%;
+  overflow: hidden;
+  background-color: rgb(9, 38, 68);
+  left: 0%;
   top: 0%;
+  margin-right: 10px;
   display: flex;
   position: absolute;
-  
-
+  border-radius: 1rem;
   width: 100%;
   height: 10%;
- }
-  
-  /* Style the topnav links */
-  .topnav a {
-    
-    display: block;
-    color: #fdfcfc;
-    padding: 14px 16px;
-    font-family: "Times New Roman", Times, serif;
-    font-size: 25px;
-    text-decoration: none;
-   }
-  
-  /* Change color on hover */
-  .topnav a:hover {
-    background-color:rgb(9, 38, 68);
-    color:burlywood;
-  }
-  .what-icu{
-  font-family: "Times New Roman", Times, serif;
-    background-color:rgb(220, 227, 228) ;
-   top: 20%;
-    left:20%;
-    text-align: left;
-   font-size: 25px;
-   border-radius: 25px;
-   border: 10px  ;
-  color: rgb(9, 38, 68); 
-   border-radius: 25px;
-   border: 10px solid rgb(9, 38, 68);
-   padding: 20px;
-   width: auto;
-   height: 150px;
-  }
- 
-  #customers {
-    font-family: Arial, Helvetica, sans-serif;
-    border-collapse: collapse;
-    width: 100%;
-  }
-  
-  #customers td, #customers th {
-    border: 1px solid #ddd;
-    padding: 8px;
-  }
-  
-  #customers tr:nth-child(even){background-color: #f2f2f2;}
-  
-  #customers tr:hover {background-color: #ddd;}
-  
-  #customers th {
-    padding-top: 12px;
-    padding-bottom: 12px;
-    text-align: left;
-    background-color:rgb(9, 38, 68);
-    color: white;
-  }
-  
-  .firstback{
-    position:center;
-    width:100%;
-    height:80%; 
-     
-  
-  }
-  .secondback{
-    position: right;
-    margin-left: 90%;
-    margin-top: 0;
-    margin-right: 10%;
-    width: 150px;
-   height: 150px;
+}
 
-  }
-  
-  p.round1{
-    border: 2px solid rgb(9, 38, 68);
-  border-radius: 5px;
+/* Style the topnav links */
+.topnav a {
+
+  display: block;
+  color: #fdfcfc;
+  padding: 14px 16px;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 25px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: rgb(9, 38, 68);
+  color: burlywood;
+}
+
+.what-icu {
+  font-family: "Times New Roman", Times, serif;
+  background-color: rgb(220, 227, 228);
+  text-align: left;
+  font-size: 25px;
+  border-radius: 25px;
+  border: 10px;
+  color: rgb(9, 38, 68);
+  border: 10px solid rgb(9, 38, 68);
+  padding: 20px;
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#customers {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#customers td,
+#customers th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#customers tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+#customers tr:hover {
+  background-color: #ddd;
+}
+
+#customers th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: rgb(9, 38, 68);
+  color: white;
+}
+
+.firstback {
+  position: center;
+  width: 100%;
+  height: 80%;
+  border-radius: 1rem;
+
+}
+
+.secondback {
+  position: right;
+  margin-left: 90%;
+  margin-top: 0;
+  margin-right: 10%;
+  width: 150px;
+  height: 150px;
+
+}
+
+p.round1 {
+  border: 2px solid rgb(9, 38, 68);
+  border-radius: 1rem;
   padding: 5px;
   font-family: 'Times New Roman', serif;
   font-size: 30px;
-  color:#f2f2f2;
+  text-align: center;
+  color: #f2f2f2;
   background-color: rgb(9, 38, 68);
-  }
-  .our-services{
-    padding: 2rem 5%;
-    background: var(--btnclr);
-}
-.our-services h1{
-    color: rgb(9, 38, 68);
-    font-size: 40px;
-    padding: 1rem 0;
-   text-align: center;
-}
-.our-services h1 span{
-    color:rgb(9, 38, 68);
-}
-.main-services{
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-}
-.inner-main-services{
-    flex: 1 1 280px;
-}
-.inner-main-services{
-    text-align: center;
-    padding: 3rem 1rem;
-}
-.inner-main-services i{
-    width: 50px;
-    height: 50px;
-    line-height: 50px;
-    text-align: center;
-    background: white;
-    font-size: 2rem;
-    border-radius: 100%;
-    
+  width: 30%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+
 }
 
-.inner-main-services h2{
-    color: rgb(9, 38, 68);
-    font-size: 1.7rem;
-    padding: 1rem 0;
-}
-.inner-main-services p{
-    color: white;
-    font-size: 1.5rem;
-    line-height: 18px;
+.our-services {
+  padding: 2rem 5%;
+  background: var(--btnclr);
 }
 
-.full-main{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
+.our-services h1 {
+  color: rgb(9, 38, 68);
+  font-size: 40px;
+  padding: 1rem 0;
+  text-align: center;
 }
-.main-choseus{
-    flex: 1 1 300px;
+
+.our-services h1 span {
+  color: rgb(9, 38, 68);
 }
-.main-choseus img{
-    width: 95%;
+
+.main-services {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
 }
-.chose-img{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 2rem;
+
+.inner-main-services {
+  flex: 1 1 280px;
 }
-.chose-img img{
-    width: 100px;
+
+.inner-main-services {
+  text-align: center;
+  padding: 3rem 1rem;
 }
-.chose-img p{
-    padding: 0 2rem;
-    font-size: 1.5rem;
+
+.inner-main-services i {
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  background: white;
+  font-size: 2rem;
+  border-radius: 100%;
+
 }
- 
-  .item1{
-  background-color:#acd4e5;
-  }
-  .item2{
-    background-color: #8fc7dd;
-    }
-    .item3{
-      background-color: #6eb9d4;
-      }
-  
-  
+
+.inner-main-services h2 {
+  color: rgb(9, 38, 68);
+  font-size: 1.7rem;
+  padding: 1rem 0;
+}
+
+.inner-main-services p {
+  color: white;
+  font-size: 1.5rem;
+  line-height: 18px;
+}
+
+.full-main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.main-choseus {
+  flex: 1 1 300px;
+}
+
+.main-choseus img {
+  width: 95%;
+}
+
+.chose-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+.chose-img img {
+  width: 100px;
+}
+
+.chose-img p {
+  padding: 0 2rem;
+  font-size: 1.5rem;
+}
+
+.item1 {
+  background-color: #acd4e5;
+}
+
+.item2 {
+  background-color: #8fc7dd;
+}
+
+.item3 {
+  background-color: #6eb9d4;
+}
