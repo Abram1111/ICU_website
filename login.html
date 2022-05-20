@@ -1,91 +1,104 @@
-<!DOCTYPE html>
+<!doctype html>
+<html lang="en">
+
 <head>
-    
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css">
     <style>
-        body{
+        body {
             margin-left: 20px;
             margin-bottom: 20px;
             font-family: 'Times New Roman', Times, serif;
             font-size: 30px;
+            background-image: url(image/Hospital\ Wallpapers\ 96\ images\ in\ Collection\ Page\ 1.jpg);
         }
-        p{
+
+        p {
             text-align: center;
             font-family: 'Times New Roman', Times, serif;
             font-size: 60px;
-            padding-top: 10%;
             padding-right: 30%;
             padding-left: 25%;
-            color:rgb(9, 38, 68);
+            color: rgb(111 41 31);
+            margin-top: 50px;
         }
-        input[type=text] {
-            width:30%;
-       padding: 12px 20px;
-       margin: 8px 0;
-       box-sizing: border-box;
-       border: 2px solid rgb(9, 38, 68);
-       border-radius: 4px;
-         background-color:white;
-        
-                          }
-         input[type=password] {
-         width:30%;
-       padding: 12px 20px;
-       margin: 8px 0;
-       box-sizing: border-box;
-       border: 2px solid rgb(9, 38, 68);
-       border-radius: 4px;
-         background-color: white;
-                          }
-      label{
-          color:rgb(9, 38, 68) ;
-          font-family: 'Times New Roman', Times, serif;
-          font-size: 30px;
-      }
-      .button{
-          border-radius: 50% ;
-          border: 2px solid rgb(9, 38, 68);
-          border-radius: 5px;
-          font-size: 24px;
-          color:rgb(9, 38, 68) ;
-          background-color:white;
-         position: center;
+
+        .contaner {
+            width: 70%;
+            margin: auto;
+            margin-top: 15%;
         }
-        .but{
-        padding-left: 40%;    
+
+        .form-label {
+            color: rgb(248, 248, 248);
+        }
+
+        .col-12 {
+            width: 100%;
+            position: relative;
+        }
+
+        .btn-primary {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 25%;
+            background-color: #c99ea600;
+            border-color: #c9303087;
+            border-radius: 0.7rem;
+            font-size: 30px;
+            margin-top: 10px;
+        }
+
+        .form-control {
+            background-color: #e8dede38;
+            border-radius: 0.7rem;
+            border-color: #c9303087;
         }
     </style>
+    <title>login</title>
 </head>
+
 <body>
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
     <div class="topnav">
 
         <br>
         <img src="image/icu_icon.jpg" alt="" width="100" height="75">
-           <a href="index.html" >Home</a>
-           
-           <a href="about.html">About</a>
-           <a href="#">Comtact us</a>
-        <span></span>
-          
-           <a  href="login.html"   >log in</a>
-           
-          
-          
-           <a href="index.html">log out</a>
-       
-   </div>
-<div>
-    <p>Welcome again</p>
-</div>
+        <a href="index.html">Home</a>
+        <a href="signup.html">Sign up</a>
+        <a href="about_us.html">About</a>
 
-<form>
-    <label for="fname" >First Name</label>
-    <input type="text" id="fname" name="fname">
-    <span></span>
-    <label for="password" >Password</label>
-    <input type="password" id="password" name="password">
-  </form>
-  <div class="but">
-<button class="button" style="color:rgb(9, 38, 68)" font-size="24px" font-family="Times New Roman">Log in</button>
-</div>
+    </div>
+    <div>
+        <p class="form-titel">Welcome again</p>
+    </div>
+    <div class="contaner">
+        <form class="row g-3">
+            <div class="col-md-6">
+                <label for="inputEmail4" class="form-label">Email</label>
+                <input type="email" class="form-control" id="inputEmail4">
+            </div>
+            <div class="col-md-6">
+                <label for="inputPassword4" class="form-label" id="pass">Password</label>
+                <input type="password" class="form-control" id="inputPassword4">
+            </div>
+            <div class="col-12">
+                <button type="submit" class="btn btn-primary">Sign in</button>
+            </div>
+        </form>
+    </div>
 </body>
+
+</html>

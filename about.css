@@ -1,0 +1,168 @@
+body {
+    background-color: rgb(220, 227, 228);
+    max-width: 500;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    background-color: rgb(220, 227, 228);
+    background-image: url(image/about\ us\ 2webp.webp);
+    background-repeat: repeat;
+    background-attachment: fixed;
+    background-size: 100%;
+
+}
+
+html {
+
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+h1 {
+    color: #47abcc;
+    padding-top: 105;
+    text-align: center;
+}
+
+/*
+  p {
+    color: red;
+  }*/
+* {
+    box-sizing: border-box;
+}
+
+.micon {
+    margin-left: 90%;
+    margin-top: 0;
+    margin-bottom: 90%;
+    margin-right: 0;
+    width: 50px;
+    height: 50px;
+    padding-top: 0%;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+    height: 100vh;
+}
+
+.viewdoctor {
+    top: 830px;
+    right: 400px;
+    text-align: left;
+}
+
+/* Style the header */
+.header {
+    background-color: rgb(220, 227, 228);
+    padding: 50px;
+    text-align: justify;
+    font-size: 35px;
+    display: block;
+}
+
+.menu-icons {
+    display: flex;
+    align-items: center;
+}
+
+.inner-menu-icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 1rem;
+}
+
+.inner-menu-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.inner-menu-icons i {
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    background: var(--btnclr);
+    color: rgb(29, 12, 12);
+    border-radius: 100px;
+    margin-right: 10px;
+    font-size: 2rem;
+}
+
+.inner-menu-icons i:hover {
+    transform: rotate(360deg);
+    background: var(--otherclr);
+    cursor: pointer;
+}
+
+.inner-menu-content span {
+    font-size: 1.5rem;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 10px;
+    height: 300px;
+    /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Style the footer */
+.footer {
+    background-color: rgb(6 48 91 / 92%);
+    padding: 10%;
+    text-align: left;
+    width: 100%;
+    border-radius: 1rem;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+    .column {
+        width: 100%;
+    }
+}
+
+/* Style the top navigation bar */
+.topnav {
+    overflow: hidden;
+    background-color: rgb(9, 38, 68);
+    left: 0%;
+    top: 0%;
+    margin-right: 10px;
+    display: flex;
+    position: absolute;
+    border-radius: 1rem;
+    width: 100%;
+    height: 10%;
+}
+
+/* Style the topnav links */
+.topnav a {
+
+    display: block;
+    color: #fdfcfc;
+    padding: 14px 16px;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 25px;
+    text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+    background-color: rgb(9, 38, 68);
+    color: burlywood;
+}
